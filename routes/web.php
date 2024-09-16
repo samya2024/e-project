@@ -65,8 +65,8 @@ Route::get('/tv', function () {
 Route::get('/suspence', function () {
     return view('suspence');
 });
-Route::get('/signup', function () {
-    return view('signup');
+Route::get('/webseries', function () {
+    return view('webseries');
 });
 Route::get('/documantary', function () {
     return view('documantary');

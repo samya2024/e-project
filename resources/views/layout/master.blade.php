@@ -112,7 +112,7 @@
     <div class="scroll-bar">
     <nav class="navbar navbar-expand-lg navbar-light bg-dark" id="header-nav">
       <div class="container-fluid">
-        <a class="navbar-brand" href="home.html"><img class="logo" src="Images/TheaterLogoFinal.png" alt="" width="30"
+        <a class="navbar-brand" href="/home"><img class="logo" src="Images/TheaterLogoFinal.png" alt="" width="30"
             height="24"></a>
         <button id="nav" class="navbar-toggler" id="nav" style="background-color:goldenrod" type="button" data-bs-toggle="collapse"
           data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -122,24 +122,24 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item ">
-              <a class="nav-link active" aria-current="page" href="home.blade.php" onMouseOver="this.style.color='goldenrod'" onMouseOut="this.style.color='white'">Home</a>
+              <a class="nav-link active" aria-current="page" href="/home" onMouseOver="this.style.color='goldenrod'" onMouseOut="this.style.color='white'">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " href="movies.blade.php" onMouseOver="this.style.color='goldenrod'" onMouseOut="this.style.color='white'" >Movies</a>
+              <a class="nav-link " href="/movies" onMouseOver="this.style.color='goldenrod'" onMouseOut="this.style.color='white'" >Movies</a>
  
             </li>
             <li class="nav-item">
-              <a class="nav-link " href="webseries.blade.php" onMouseOver="this.style.color='goldenrod'" onMouseOut="this.style.color='white'" >Web Series</a>
+              <a class="nav-link " href="/web-series" onMouseOver="this.style.color='goldenrod'" onMouseOut="this.style.color='white'" >Web Series</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="tv.blade.php"  onMouseOver="this.style.color='goldenrod'" onMouseOut="this.style.color='white'">TV</a>
+              <a class="nav-link" href="/tv"  onMouseOver="this.style.color='goldenrod'" onMouseOut="this.style.color='white'">TV</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="premium.blade.php"  onMouseOver="this.style.color='goldenrod'" onMouseOut="this.style.color='white'">Premium</a>
+              <a class="nav-link" href="/premium"  onMouseOver="this.style.color='goldenrod'" onMouseOut="this.style.color='white'">Premium</a>
             </li>
       
             <li class="nav-item">
-              <a class="nav-link" href="contactus.blade.php"  onMouseOver="this.style.color='goldenrod'" onMouseOut="this.style.color='white'">Contact Us</a>
+              <a class="nav-link" href="/contactus"  onMouseOver="this.style.color='goldenrod'" onMouseOut="this.style.color='white'">Contact Us</a>
             </li>
             <li>
               <!-- Genre dropdown starts-->
@@ -149,18 +149,18 @@
                         Genres
                     </button>
                     <div class="dropdown-content" style="color: white;">
-                        <a href="popular.blade.php">Popular</a>
-                        <a href="crime.blade.php">Crime</a>
-                        <a href="suspense.blade.php">Suspense & Thriller</a>
-                        <a href="action.blade.php">Action</a>
-                        <a href="fantasy.blade.php">Sci-Fi & Fantasy</a>
-                        <a href="documentary.blade.php">Documentary</a>
-                        <a href="horror.blade.php">Horror</a>
-                        <a href="drama.blade.php">Drama</a>
-                        <a href="war.blade.php">War & Politics</a>
-                        <a href="comedy.blade.php">Comedy</a>
-                        <a href="romance.blade.php">Romance</a>
-                        <a href="anime.blade.php">Anime</a>
+                        <a href="/popular">Popular</a>
+                        <a href="/crime">Crime</a>
+                        <a href="/suspense">Suspense & Thriller</a>
+                        <a href="/action">Action</a>
+                        <a href="/fantasy">Sci-Fi & Fantasy</a>
+                        <a href="/documentary">Documentary</a>
+                        <a href="/horror">Horror</a>
+                        <a href="/drama">Drama</a>
+                        <a href="/war">War & Politics</a>
+                        <a href="/comedy">Comedy</a>
+                        <a href="/romance">Romance</a>
+                        <a href="/anime">Anime</a>
                       </div>
                 </div>
               </div>
@@ -212,12 +212,12 @@
         <div class="footer-middle">
           <h2 class="footer-heading">Services</h2>
           <ul class="footer-middle-list">
-            <li class="footer-middle-list-item"><a href="home.html">Enjoy Latest Movies</a> </li>
-            <li class="footer-middle-list-item"><a href="web-series.html">Watch Web-Series</a> </li>
-            <li class="footer-middle-list-item"><a href="kids.html">Everything for Kids</a> </li>
-            <li class="footer-middle-list-item"><a href="news.html">Coming soon</a> </li>
-            <li class="footer-middle-list-item"><a href="premium.html">Get Premium Subscription</a> </li>
-            <li class="footer-middle-list-item"><a href="faq.html">FAQ</a> </li>
+            <li class="footer-middle-list-item"><a href="/home">Enjoy Latest Movies</a> </li>
+            <li class="footer-middle-list-item"><a href="/webseries">Watch Web-Series</a> </li>
+            <li class="footer-middle-list-item"><a href="/kids">Everything for Kids</a> </li>
+            <li class="footer-middle-list-item"><a href="/news">Coming soon</a> </li>
+            <li class="footer-middle-list-item"><a href="/premium">Get Premium Subscription</a> </li>
+            <li class="footer-middle-list-item"><a href="/faq">FAQ</a> </li>
           </ul>
         </div>
        <div class="footer-middle">
@@ -308,6 +308,7 @@
         <script src="script.js"></script>
 <script src="main-min.js"></script>
 <script src="question.js"></script>
+    <script src="./static/script.js"></script>
 
 
 
