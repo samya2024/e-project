@@ -91,12 +91,12 @@ body {
   color: #7bdf1d;
 }
 .menu li a:hover {
-  color: red !important;
+  color: goldenrod !important;
   opacity: 0.5;
 }
 
 marquee {
-  color: red;
+  color: goldenrod;
   font-size: 25px;
   font-family: Arial;
   background: black;
@@ -110,7 +110,7 @@ marquee {
 }
 
 .online {
-  color: red;
+  color: goldenrod;
   font-size: 27px;
   padding: 10px 25px;
   text-align: center;
@@ -221,13 +221,13 @@ img:hover {
 }
 
 .maincontainer h2 {
-  color: red;
+  color: goldenrod;
   text-align: center;
 }
 .foot {
   text-align: center;
   background-color: black;
-  color: red;
+  color: goldenrod;
   height: 50px;
   margin: 30px;
 }
@@ -268,7 +268,7 @@ img:hover {
   margin-top: 10%;
   margin-right: 50%;
   margin-bottom: 50%;
-  background: red;
+  background: goldenrod;
   color: white;
   border-radius: 5px 5px 5px 5px;
   cursor: pointer;
@@ -295,12 +295,12 @@ img:hover {
   margin: 1rem;
 }
 .red {
-  color: #e71328;
+  color: goldenrod;
 }
 .redline {
   width: 50px;
   height: 3px;
-  background-color: #e71328;
+  background-color: goldenrod;
   border: none;
   margin: 0 auto;
 }
@@ -371,7 +371,7 @@ iframe {
 .redline-address {
   border: none;
   height: 3px;
-  background-color: #e71328;
+  background-color: goldenrod;
   width: 140px;
   margin-bottom: 20px;
 }
@@ -492,7 +492,7 @@ textarea.ng-valid {
 .input:not(:placeholder-shown).input:not(:focus) + label {
   transform: translateY(-25px);
   font-size: 10px;
-  color: #e71328;
+  color: goldenrod;
   text-transform: uppercase;
   font-weight: 600;
   padding-left: 10px;
@@ -544,7 +544,7 @@ textarea.ng-valid {
   content: "";
   height: 2px;
   width: 100%;
-  background: #e71328;
+  background: goldenrod;
   transform: scaleX(0);
   transform-origin: center;
   transition: transform 0.4s ease;
@@ -566,9 +566,9 @@ textarea.ng-valid {
   padding: 0.4rem 1.4rem;
   text-transform: uppercase;
   cursor: pointer;
-  background-color: #e71328;
+  background-color: goldenrod;
   color: #000;
-  border: 2px solid #e71328;
+  border: 2px solid goldenrod;
   font-weight: 600;
   z-index: 100;
   transition: 0.3s box-shadow;
@@ -577,8 +577,8 @@ textarea.ng-valid {
   border-radius: 0.25rem;
 }
 .fill .sm-button:hover {
-  box-shadow: 0 0 10px rgba(231, 19, 40, 0.7), 0 0 15px rgba(231, 19, 40, 0.7),
-    0 0 20px rgba(231, 19, 40, 0.7);
+  box-shadow: 0 0 10px goldenrod, 0 0 15px rgba(218, 165, 32, 0.694),
+    0 0 20px rgba(218, 165, 32, 0.694);
   transition: 0.3s box-shadow;
   -webkit-transition: 0.3s box-shadow;
 }
@@ -596,11 +596,11 @@ textarea.ng-valid {
 
 ::-webkit-scrollbar-track {
   border: 5px solid #2c2f30;
-  background-color: red;
+  background-color: goldenrod;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: red !important;
+  background-color: goldenrod!important;
 }
 
 ::-webkit-scrollbar-track:hover {
@@ -656,7 +656,7 @@ textarea.ng-valid {
 .footer-middle a i:hover {
   background-color: white;
   border-radius: 50px;
-  color: red;
+  color: goldenrod;
 }
 .footer-middle-list-item {
   list-style: none;
@@ -670,14 +670,14 @@ textarea.ng-valid {
   color: white;
 }
 .footer-middle-list-item a:hover {
-  color: red;
+  color: goldenrod;
 }
 .footer-right {
   margin-top: -15px;
 }
 .footer-contact-button {
   font-size: 20px;
-  background-color: red;
+  background-color: goldenrod;
   color: black;
   padding: 10px;
   border: none;
@@ -686,7 +686,7 @@ textarea.ng-valid {
 }
 .footer-contact-button:hover {
   background-color: white;
-  color: red;
+  color: goldenrod;
 }
 .footer-bottom-tagline {
   color: white;
@@ -786,7 +786,7 @@ textarea.ng-valid {
 }
 
 .dropdown-content a:hover {
-  background-color: red;
+  background-color: goldenrod;
   color: white;
   text-decoration: none;
 }

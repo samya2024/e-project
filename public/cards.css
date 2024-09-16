@@ -2,7 +2,7 @@
   font-family: 'Ubuntu', sans-serif;
 }
 .poster, .movie_card {
-  box-shadow: 0 0 10px red !important;
+  box-shadow: 0 0 10px hsl(43, 74%, 49%) !important;
 
 }
 
@@ -127,7 +127,7 @@ h1{
 .flip-card-back_i {
   width: 250px;
   height: 360px;
-  background-image: linear-gradient(black,#8B0000);
+  background-image: linear-gradient(black,rgba(218, 165, 32, 0.735));
   color: white;
   transform: rotateY(180deg);
   cursor: default;

@@ -50,7 +50,7 @@ body{
 }
 .start_btn :hover{
     color:black;
-    background-color: red;
+    background-color: goldenrod;
 }
 
 .info_box{
@@ -269,12 +269,12 @@ section .option_list .option.disabled{
 }
 
 
-}
 
-}
 
-.
-}
+
+
+
+
 
 footer{
     height: 60px;
@@ -320,7 +320,7 @@ footer button{
 
 footer button:hover{
     color:black;
-    background-color: red;
+    background-color: goldenrod;
 }
 
 footer button.show{
@@ -393,7 +393,7 @@ footer button.show{
 
 .buttons button.restart:hover{
     color:black;
-    background-color: red;
+    background-color: goldenrod;
 }
 
 .buttons button.quit{
@@ -403,5 +403,5 @@ footer button.show{
 
 .buttons button.quit:hover{
     color: black;
-    background-color:red;
+    background-color:goldenrod;
 }

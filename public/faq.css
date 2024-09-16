@@ -55,8 +55,8 @@ summary {
     color: white;
   }
   summary:active{
-    color:red;
+    color:goldenrod;
   }
   summary:hover{
-    color:red;
+    color:goldenrod;
   }

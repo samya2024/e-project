@@ -1,4 +1,4 @@
-]<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -121,7 +121,7 @@
 
 
 
-  <div class="scroll-bar">
+
     <!-- navbar starts -->
 
     <nav class="navbar navbar-expand-lg navbar-light bg-dark" id="header-nav">

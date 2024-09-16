@@ -54,7 +54,7 @@
     font-size: 3rem;
   }
   span {
-    color: rgb(187, 14, 14);
+    color: goldenrod;
   }
   .text-container p {
     color: #fff;
@@ -112,19 +112,19 @@
   .text-container .button {
     color: #fff;
     text-decoration: none;
-    background-color: rgb(165, 7, 7);
+    background-color: goldenrod;
     }
   .text-container .button:hover {
     color: #fff;
     text-decoration: none;
-    background-color: rgb(202, 6, 6);
+    background-color: goldenrod;
     transition:  all 500ms;
   }
   .button {
     color: #fff;
     text-decoration: none;
-    background-color: rgb(165, 7, 7);
-    box-shadow: 0 5px #660707;
+    background-color: goldenrod;
+    box-shadow: 0 5px rgba(218, 165, 32, 0.694);
     display: inline-block;
     opacity: 0.9;
   }
@@ -154,12 +154,12 @@
     text-align: center;
   }
   .bottom-text-container .watch , .bottom-text-container .repeat{
-    background-color: rgb(145, 9, 9);
+    background-color: goldenrod;
     border: none;
   }
   .bottom-text-container .chill {
-    border:1px solid rgb(165, 7, 7);
-    color:rgb(165, 7, 7)
+    border:1px solid goldenrod;
+    color:goldenrod
   }
   .bottom-text-container1 {
     display: flex;

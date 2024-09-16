@@ -107,7 +107,7 @@
     z-index: 99;
     width: 50px;
     height: 50px;
-    background-color:red;
+    background-color:goldenrod;
     color:black;
     border: none;
     cursor: pointer;
@@ -117,11 +117,11 @@
     }
     #scrollToTopButton:hover, i:hover {
     background-color:white;
-    color:red;
+    color:goldenrod;
     }
     #nav:hover
   {
-    background-color:#e60e23!important;
+    background-color:goldenrod!important;
   
   }
   
