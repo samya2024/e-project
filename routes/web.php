@@ -59,15 +59,11 @@ Route::get('/action', function () {
 Route::get('/romance', function () {
     return view('romance');
 });
-Route::get('/tv', function () {
-    return view('tv');
-});
+
 Route::get('/suspence', function () {
     return view('suspence');
 });
-Route::get('/webseries', function () {
-    return view('webseries');
-});
+
 Route::get('/documantary', function () {
     return view('documantary');
 });

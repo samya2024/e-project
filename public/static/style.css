@@ -79,7 +79,7 @@ body {
   color: #7bdf1d;
 }
 #nav:hover {
-  background-color: #e60e23 !important;
+  background-color: goldenrod!important;
 }
 .fas:hover {
   background: none !important ;
@@ -91,12 +91,12 @@ body {
   color: #7bdf1d;
 }
 .menu li a:hover {
-  color: red !important;
+  color: goldenrod!important;
   opacity: 0.5;
 }
 
 marquee {
-  color: red;
+  color: goldenrod;
   font-size: 25px;
   font-family: Arial;
   background: black;
@@ -110,7 +110,7 @@ marquee {
 }
 
 .online {
-  color: red;
+  color: goldenrod;
   font-size: 27px;
   padding: 10px 25px;
   text-align: center;

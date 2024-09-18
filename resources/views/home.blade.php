@@ -24,83 +24,206 @@
   <link rel="stylesheet" href="static/bootstrap.min.css">
   <link rel="stylesheet" href="static/style-min.css">
   <link rel="stylesheet" href="cards.css">
+  <link rel="stylesheet" href="static/premium.css">
+  <link rel="stylesheet" href="static/faq.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="webstyle.css">
+
+
 
 </head>
 
 <!------------------------Scroll to top button------------------------------------------------>
 <style>
-  .poster {
-    box-shadow: 0 0 15px goldenrod !important;
+
+  .poster, .movie_card {
+    box-shadow: 0 0 10px goldenrod !important;
   
   }
-  .buddy{
-    cursor: pointer;
-  }
-  #scrollToTopButton {
-    position: fixed;
-    bottom: 40px;
-    right: 25px;
-    font-size: 25px;
-    z-index: 99;
-    width: 50px;
-    height: 50px;
-    background-color: goldenrod;
-    color: black;
-    border: none;
-    cursor: pointer;
-    outline: none;
-    padding: 6px;
-    border-radius: 50%;
+  .carousel-inner{
+  cursor: pointer;
+}
+  body{
+    font-size: 1rem !important;
+    font-family: 'Ubuntu', sans-serif;
+    -webkit-text-size-adjust: 100%;
   }
 
-#scrollToTopButton:hover,i:hover {
-    background-color: white;
-    color: goldenrod;
+  .card-title{
+    text-align: left;
   }
-
-  .navbar-nav{
-    display: flex;
-    align-items: center;
-    padding: 0px 7.5px;
-  }
-
-
-
-
-  .maincontainer h3 {
-    color: white;
-    text-align: center;
-}
-
-.container {
-  text-align: center;
-}
-#navbarNav.nav-item.nav-link a:hover{
-  color: goldenrod;
-}
-.nav-link:hover{
-  color: goldenrod;
-}
-.nav-item :hover{
+  .nav-item :hover{
   margin-bottom: 10px;
   
   
 }
-
 #header-nav .navbar-nav .nav-item .nav-link:hover {
   color: goldenrod;
   text-decoration: none; /* Remove underline */
   transition: color 0.3s ease, text-shadow 0.3s ease; /* Add transition effect */
   text-shadow: 0 0 10px goldenrod; /* Add glowing effect */
 }
-.dropdown{
-  position: relative; 
-  disPlay: inline-block; 
-  padding-top: 5px;
-   padding-left: 15p;
+  .flim{
+    text-align: left;
+    flex: 1 1 auto;
+    padding: 1rem 1rem;
+  }
+  .slide{
+    height: 100% !important;
+    width: 100% !important;
+  }
+
+  .row{
+    padding-left: 50px !important;;
+  }
+
+    #scrollToTopButton{
+  position:fixed;
+  bottom: 40px;
+  right: 25px;
+  font-size: 25px;
+  z-index: 99;
+  width: 50px;
+  height: 50px;
+  background-color:goldenrod;
+  color:black;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 6px;
+  border-radius: 50%;
+  }
+  #scrollToTopButton:hover, i:hover {
+  background-color:white;
+  color:goldenrod;
+  }
+  
+  .scroll-bar {
+  height: auto;
+  width: auto;
+  margin: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-width: 100%;
+  }
+
+::-webkit-scrollbar-track {
+border: 5px solid #2c2f30;
+background-color: goldenrod;
 }
-#dropdownMenuButton{
-  font-size:20px; 
+
+::-webkit-scrollbar-thumb:hover {
+background-color: goldenrod!important;
+}
+
+::-webkit-scrollbar-track:hover {
+background-color: white;
+}
+
+::-webkit-scrollbar {
+width: 15px;
+background-color: #2c2f30;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-radius: 10px;
+}
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        /* navbar css */
+
+        #header-nav .nav-link {
+            color: white;
+            font-size: 20px;
+            margin-left: 20px;
+        }
+
+        .menu li a:hover {
+            color: goldenrod !important;
+            opacity: 0.5;
+        }
+
+        #variety {
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .logo {
+            width: 81px;
+            height: 52px;
+        }
+
+     
+
+        .logo {
+            width: 110px;
+            height: 90px;
+            padding: 3px;
+            margin: 0;
+            padding: 0;
+        }
+  #header-nav .nav-link {
+  color: white;
+  font-size: 20px;
+  margin-left: 20px;
+}
+    @media only screen and (max-width: 1400px){
+  #header-nav .nav-link {
+    color: white;
+    font-size: 18px;
+    margin-left: 18px;
+  }
+  #searchText{
+    width: 150px;
+  }
+}
+
+@media only screen and (min-width: 1133px) and (max-width: 1275px) {
+  #header-nav .nav-link {
+    color: white;
+    font-size: 15px;
+    margin-left: 10px;
+  } 
+  
+}
+@media only screen and (min-width: 1035px) and (max-width: 1132px) {
+  #header-nav .nav-link {
+    color: white;
+    font-size: 15px;
+    margin-left: 10px;
+  } 
+  #searchText{
+    width: 120px;
+  }
+  #submitBtn{
+    width: 60px;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 993px) and (max-width: 1034px) {
+  #header-nav .nav-link {
+    color: white;
+    font-size: 14px;
+    margin-left: 10px;
+  } 
+
+#searchText{
+  width: 100px;
+}
+#submitBtn{
+  width: 50px;
+  display: flex;
+  justify-content: center;
+}
+}
+
+.container {
+  text-align: center;
 }
 .sam{
   position: relative;
@@ -108,6 +231,8 @@
    padding-top: 5px; 
   padding-left: 15px;
 }
+
+
 </style>
 <script>
   setTimeout(function () {
@@ -121,16 +246,16 @@
 
 
 
-
+  <div class="scroll-bar">
     <!-- navbar starts -->
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark" id="header-nav">
+    <nav class="navbar navbar-expand-lg navbar-light " id="header-nav">
       <div class="container-fluid">
         <a class="navbar-brand" href="/home"><img class="logo" src="Images/TheaterLogoFinal.png" alt="" width="30"
             height="24"></a>
         <button id="nav" class="navbar-toggler" id="nav" style="background-color:goldenrod" type="button" data-bs-toggle="collapse"
           data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon" style="background-color:dark-grey;"></span>
+          <span class="navbar-toggler-icon" style="background-color:goldenrod;"></span>
         </button>
         
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -143,20 +268,14 @@
  
             </li>
             <li class="nav-item">
-              <a class="nav-link " href="/webseries" onMouseOver="this.style.color='goldenrod'" onMouseOut="this.style.color='white'" >WebSeries</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="/kids" onMouseOver="this.style.color='goldenrod'" onMouseOut="this.style.color='white'">Kids</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/tv"  onMouseOver="this.style.color='goldenrod'" onMouseOut="this.style.color='white'">TV</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/premium"  onMouseOver="this.style.color='goldenrod'" onMouseOut="this.style.color='white'">Premium</a>
             </li>
       
             <li class="nav-item">
-              <a class="nav-link" href="/contactus"  onMouseOver="this.style.color='goldenrod'" onMouseOut="this.style.color='white'">ContactUs</a>
+              <a class="nav-link" href="/contactus"  onMouseOver="this.style.color='goldenrod'" onMouseOut="this.style.color='white'">Contact Us</a>
             </li>
             <li>
               <!-- Genre dropdown starts-->
@@ -165,7 +284,7 @@
                     <button class="btn btn-outline-warning dropdown-toggle" type="button" id="dropdownMenuButton" >
                         Genres
                     </button>
-                    <div class="dropdown-content" style="color: white;">
+                    <div class="dropdown-content" style="color: white; ">
                         <a href="/popular">Popular</a>
                         <a href="/crime">Crime</a>
                         <a href="/suspense">Suspense & Thriller</a>
@@ -173,7 +292,7 @@
                         <a href="/fantasy">Sci-Fi & Fantasy</a>
                         <a href="/documentary">Documentary</a>
                         <a href="/horror">Horror</a>
-                        <a href="/drama">Drama</a>
+                      
                         <a href="/war">War & Politics</a>
                         <a href="/comedy">Comedy</a>
                         <a href="/romance">Romance</a>
@@ -290,7 +409,7 @@
         
     <div class="maincontainer">
 
-      <h2>Movies</h2>
+      <h2 style="color:goldenrod">Movies</h2>
       <hr>
       <div class="container">
           <div id="movies" class="row"></div>
@@ -1246,8 +1365,8 @@
     </div>
     <!---next block -->
 
-    <h2>Web Series</h2>
-    <hr>
+    
+
     <div class="container" id="WebSeries">
       <h3>Hollywood</h3>
       <hr>
@@ -2367,7 +2486,7 @@
        
 
 
-      <h2>Kids</h2>
+      <h2 style="color:aliceblue" >Kids</h2>
       <hr>
       <div class="container" id="Kids">
 
@@ -2567,7 +2686,7 @@
 
       </div>
 
-      <h2>Anime</h2>
+      <h2 style="color:aliceblue">Anime</h2>
       <hr>
       <div class="container" id="anime">
 
@@ -2907,7 +3026,7 @@
       <hr class="footer-hr">
       <div class="footer-content">
         <div class="footer-left">
-          <a href="home.html"><img class="footer-logo" src="Images/TheaterLogoFinal.png" alt="" width="30"
+          <a href="/home"><img class="footer-logo" src="Images/TheaterLogoFinal.png" alt="" width="30"
               height="24"></a>
           <p class="footer-bottom-tagline">Watch! Chill! Repeat!</p>
         </div>
@@ -2922,20 +3041,18 @@
                 class="fab fa-linkedin linkedin" style="color:goldenrod"></i></a>
             <a class="footer-links" href="https://www.instagram.com/" target="_blank"><i
                 class="fab fa-instagram instagram" style="color:goldenrod"></i></a>
-            <a class="footer-links" href="https://github.com/QAZIMAAZARSHAD/Movie-Streaming-Website" target="_blank"><i
-                class="fab fa-github github" style="color:goldenrod"></i></a>
+           
           </ul>
         </div>
         <div class="footer-middle">
           <h2 class="footer-heading">Services</h2>
           <ul class="footer-middle-list">
-          <li class="footer-middle-list-item"><a href="/home">Enjoy Latest Movies</a> </li>
-                    <li class="footer-middle-list-item"><a href="/webseries">Watch Web-Series</a> </li>
-                    <li class="footer-middle-list-item"><a href="/kids">Everything for Kids</a> </li>
-                    <li class="footer-middle-list-item"><a href="/news">Coming soon</a> </li>
-                    <li class="footer-middle-list-item"><a href="/premium">Get Premium Subscription</a> </li>
-                    <li class="footer-middle-list-item"><a href="/faq">FAQ</a> </li>
-              
+            <li class="footer-middle-list-item"><a href="/home">Enjoy Latest Movies</a> </li>
+          
+            <li class="footer-middle-list-item"><a href="/kids">Everything for Kids</a> </li>
+            <li class="footer-middle-list-item"><a href="/news">Coming soon</a> </li>
+            <li class="footer-middle-list-item"><a href="/premium">Get Premium Subscription</a> </li>
+            <li class="footer-middle-list-item"><a href="/faq">FAQ</a> </li>
           </ul>
         </div>
        <div class="footer-middle">
@@ -2949,7 +3066,7 @@
           <p class="footer-links">
           <h2 class="footer-heading">Contact Us</h2>
           <p class="footer-bottom-tagline">Feel free to contact us.</p>
-          <a class="footer-contact-button" href="contactus.html">Contact</a>
+          <a class="footer-contact-button" href="/contactus">Contact</a>
           </p>
         </div>
       </div>
