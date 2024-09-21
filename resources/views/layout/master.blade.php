@@ -233,7 +233,7 @@ background-color: #2c2f30;
     <div class="scroll-bar">
     <nav class="navbar navbar-expand-lg navbar-light" id="header-nav">
       <div class="container-fluid">
-        <a class="navbar-brand" href="/home"><img class="logo" src="/Images/Logo/Title.jpeg" alt="" width="30"
+        <a class="navbar-brand" href="/home"><img class="logo" src="/Images/Logo/cinema.jpg" alt="" width="30"
             height="24"></a>
         <button id="nav" class="navbar-toggler" id="nav" style="background-color:goldenrod" type="button" data-bs-toggle="collapse"
           data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -308,7 +308,7 @@ background-color: #2c2f30;
       <hr class="footer-hr">
       <div class="footer-content">
         <div class="footer-left">
-          <a href="home.html"><img class="footer-logo" src="Images/TheaterLogoFinal.png" alt="" width="30"
+          <a href="home.html"><img class="footer-logo" src="/Images/Logo/cinema.jpg" alt="" width="30"
               height="24"></a>
           <p class="footer-bottom-tagline">Watch! Chill! Repeat!</p>
         </div>
@@ -323,9 +323,7 @@ background-color: #2c2f30;
                 class="fab fa-linkedin linkedin" style="color:goldenrod"></i></a>
             <a class="footer-links" href="https://www.instagram.com/" target="_blank"><i
                 class="fab fa-instagram instagram" style="color:goldenrod"></i></a>
-            <a class="footer-links" href="https://github.com/QAZIMAAZARSHAD/Movie-Streaming-Website" target="_blank"><i
-                class="fab fa-github github" style="color:goldenrod"></i></a>
-          </ul>
+             </ul>
         </div>
         <div class="footer-middle">
           <h2 class="footer-heading">Services</h2>

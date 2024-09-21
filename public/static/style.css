@@ -99,7 +99,7 @@ marquee {
   color: goldenrod;
   font-size: 25px;
   font-family: Arial;
-  background: black;
+  
 }
 .logo {
   width: 110px;
@@ -115,7 +115,7 @@ marquee {
   padding: 10px 25px;
   text-align: center;
   display: block;
-  background: black;
+  
 }
 
 .buddy {
@@ -371,7 +371,7 @@ iframe {
 .redline-address {
   border: none;
   height: 3px;
-  background-color: #e71328;
+  background-color: goldenrod;
   width: 140px;
   margin-bottom: 20px;
 }

@@ -1,4 +1,5 @@
- /* CSS FOR FOOTER */
+
+/* CSS FOR FOOTER */
  *{
   font-family: 'Ubuntu', sans-serif;
  }
@@ -137,7 +138,7 @@
   .fas:hover{background: none!important ;}
   .nav-item{ flex-wrap:wrap;}
   .menu li a:hover {
-    color: red !important;
+    color: goldenrod !important;
     opacity: 0.5;
   }
   
@@ -159,7 +160,7 @@
     padding: 0;
   }
   .footer-heading{
-    color:red;
+    color:goldenrod;
   }
   .footer-left, .footer-right, .footer-middle{
   text-align:center;
@@ -177,7 +178,7 @@
   .footer-middle a i:hover{
   background-color:white;
   border-radius:50px;
-  color:red;
+  color:goldenrod;
   }
   .footer-middle-list-item{
   list-style:none;
@@ -191,14 +192,14 @@
   color:white;
   }
   .footer-middle-list-item a:hover{
-  color:red;
+  color:goldenrod;
   }
   .footer-right{
     margin-top:-15px;
   }
   .footer-contact-button{
   font-size:20px;
-  background-color:red;
+  background-color:goldenrod;
   color:black;
   padding:10px;
   border:none;
@@ -207,7 +208,7 @@
   }
   .footer-contact-button:hover{
   background-color:white;
-  color:red;
+  color:goldenrod;
   }
   .footer-bottom-tagline{
   color:white;

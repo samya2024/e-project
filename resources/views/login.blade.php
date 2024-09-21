@@ -484,7 +484,7 @@
   <body>
     <div class="logo">
       <a href="/home">
-        <img src="Images/TheaterLogoFinal.png" class="img-logo" alt="Logo" />
+        <img src="/Images/Logo/cinema.jpg" class="img-logo" alt="Logo" />
       </a>
     </div>
     <div class="login-div">

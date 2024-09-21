@@ -340,8 +340,8 @@ h1 {
   </head>
   <body>
     <div class="logo">
-      <a href="home.html">
-        <img src="Images/TheaterLogoFinal.png" class="img-logo" />
+      <a href="/home">
+        <img src="/Images/Logo/cinema.jpg" class="img-logo" />
       </a>
     </div>
     <div class="login-div">
