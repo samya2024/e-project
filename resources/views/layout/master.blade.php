@@ -21,12 +21,13 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-  <link rel="stylesheet" href="webstyle.css">
+  <link rel="stylesheet" href="static/bootstrap.min.css">
+  <link rel="stylesheet" href="static/style-min.css">
   <link rel="stylesheet" href="cards.css">
-  <link rel="stylesheet" href="landpage.css">
-  <link rel="stylesheet" href="quizstyle.css">
-    <link rel="stylesheet" href="static/style-min.css">
+  <link rel="stylesheet" href="static/premium.css">
+  <link rel="stylesheet" href="static/faq.css">
   <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="webstyle.css">
   
 </head>
         <!------------------------Scroll to top button------------------------------------------------>
@@ -230,9 +231,9 @@ background-color: #2c2f30;
 
     <body>
     <div class="scroll-bar">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="header-nav">
+    <nav class="navbar navbar-expand-lg navbar-light" id="header-nav">
       <div class="container-fluid">
-        <a class="navbar-brand" href="/home"><img class="logo" src="Images/TheaterLogoFinal.png" alt="" width="30"
+        <a class="navbar-brand" href="/home"><img class="logo" src="/Images/Logo/Title.jpeg" alt="" width="30"
             height="24"></a>
         <button id="nav" class="navbar-toggler" id="nav" style="background-color:goldenrod" type="button" data-bs-toggle="collapse"
           data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -245,7 +246,7 @@ background-color: #2c2f30;
               <a class="nav-link active" aria-current="page" href="/home" onMouseOver="this.style.color='goldenrod'" onMouseOut="this.style.color='white'">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " href="/movies" onMouseOver="this.style.color='goldenrod'" onMouseOut="this.style.color='white'" >Movies</a>
+              <a class="nav-link " href="/popular" onMouseOver="this.style.color='goldenrod'" onMouseOut="this.style.color='white'" >Popular</a>
  
             </li>
          
@@ -253,9 +254,7 @@ background-color: #2c2f30;
               <a class="nav-link" href="/crime"  onMouseOver="this.style.color='goldenrod'" onMouseOut="this.style.color='white'">Premium</a>
             </li>
       
-             <li class="nav-item">
-              <a class="nav-link" href="/premium"  onMouseOver="this.style.color='goldenrod'" onMouseOut="this.style.color='white'">Premium</a>
-            </li>
+           
       
             <li class="nav-item">
               <a class="nav-link" href="/contactus"  onMouseOver="this.style.color='goldenrod'" onMouseOut="this.style.color='white'">Contact Us</a>
@@ -270,16 +269,16 @@ background-color: #2c2f30;
                     <div class="dropdown-content" style="color: white;">
                     
                         
-                        <a href="/suspense">Suspense & Thriller</a>
+                        <a href="/suspense">Suspence & Thriller</a>
                         <a href="/action">Action</a>
-                        <a href="/fantasy">Sci-Fi & Fantasy</a>
+                        <a href="/fantasy">Sci-Fi & Fantacy</a>
                         <a href="/documentary">Documentary</a>
                         <a href="/horror">Horror</a>
-                        <a href="/drama">Drama</a>
                         <a href="/war">War & Politics</a>
                         <a href="/comedy">Comedy</a>
                         <a href="/romance">Romance</a>
                         <a href="/anime">Anime</a>
+                        
                       </div>
                 </div>
               </div>
@@ -332,7 +331,7 @@ background-color: #2c2f30;
           <h2 class="footer-heading">Services</h2>
           <ul class="footer-middle-list">
             <li class="footer-middle-list-item"><a href="/home">Enjoy Latest Movies</a> </li>
-            <li class="footer-middle-list-item"><a href="/webseries">Watch Web-Series</a> </li>
+        
             <li class="footer-middle-list-item"><a href="/kids">Everything for Kids</a> </li>
             <li class="footer-middle-list-item"><a href="/news">Coming soon</a> </li>
             <li class="footer-middle-list-item"><a href="/premium">Get Premium Subscription</a> </li>
@@ -350,7 +349,7 @@ background-color: #2c2f30;
           <p class="footer-links">
           <h2 class="footer-heading">Contact Us</h2>
           <p class="footer-bottom-tagline">Feel free to contact us.</p>
-          <a class="footer-contact-button" href="contactus.html">Contact</a>
+          <a class="footer-contact-button" href="/contactus">Contact</a>
           </p>
         </div>
       </div>

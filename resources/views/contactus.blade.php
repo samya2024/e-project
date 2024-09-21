@@ -1,4 +1,6 @@
 @extends('layout.master')
+@section('title','contactpage')
+
 @section('content')
 <style>
 

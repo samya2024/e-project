@@ -37,8 +37,8 @@ Route::get('/dummy', function () {
 Route::get('/faq', function () {
     return view('faq');
 });
-Route::get('/dramas', function () {
-    return view('dramas');
+Route::get('/documentary', function () {
+    return view('documentary');
 });
 
 Route::get('/contactus', function () {
@@ -68,10 +68,21 @@ Route::get('/documantary', function () {
     return view('documantary');
 });
 
-Route::get('/crime', function () {
-    return view('crime');
+
+Route::get('/popular', function () {
+    return view('popular');
+});
+Route::get('/premium', function () {
+    return view('premium');
 });
 
+Route::get('/kids', function () {
+    return view('kids');
+});
+
+Route::get('/login', function () {
+    return view('login');
+});
 
 
 

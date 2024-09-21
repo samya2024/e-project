@@ -42,7 +42,7 @@
 
     <div class="text-container">
       <div class="container-2">
-        <a class="navbar-brand" href="home.html" title="Home"
+        <a class="navbar-brand" href="/home" title="Home"
           ><img class="logo" src="Images/Logo/film.jpg" alt=""
         /></a>
         <div class="intro-container">
