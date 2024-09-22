@@ -402,7 +402,7 @@ background-color: #2c2f30;
     </script>
     <script>
       function logout(){
-        window.location.replace("login.html");
+        window.location.replace("/login");
       }
       </script>
    
