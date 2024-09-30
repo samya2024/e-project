@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,8 +15,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
+
+
 
 
 Route::get('/home', function () {
@@ -80,13 +83,26 @@ Route::get('/kids', function () {
     return view('kids');
 });
 
-Route::get('/login', function () {
-    return view('login');
+
+Route::get('/register', function () {
+    return view('register');
 });
-Route::get('/signup', function () {
-    return view('signup');
+Route::get('/index', function () {
+    return view('index');
 });
 
 
 
 
+
+Route::middleware([
+    'auth:sanctum',
+    config('jetstream.auth_session'),
+    'verified',
+])->group(function () {
+    Route::get('/dashboard', function () {
+        if(Auth::User()->role==0){
+            return view('home');
+        }
+    })->name('dashboard');
+});

@@ -399,8 +399,88 @@ background-color: #2c2f30;
                             }
                           </script><br>
                         <br>
-                        <button class="btn_i b4_i">▶Play</button>
-                          </div>
+                          <button id="bookTicketBtn">Book Tickets</button>
+    
+    <div id="bookingForm" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form id="ticketForm">
+                <!-- Movie Title -->
+                <label for="movieTitle">Movie Title:</label>
+                <select id="movieTitle" name="movieTitle">
+                    <option value="Movie 1">Movie 1</option>
+                    <option value="Movie 2">Movie 2</option>
+                </select><br><br>
+
+                <!-- Show Timings -->
+                <label for="showTime">Show Time:</label>
+                <select id="showTime" name="showTime">
+                    <option value="10:00 AM">10:00 AM</option>
+                    <option value="1:00 PM">1:00 PM</option>
+                    <option value="4:00 PM">4:00 PM</option>
+                    <option value="7:00 PM">7:00 PM</option>
+                </select><br><br>
+
+                <!-- Language Options -->
+                <label for="language">Language:</label>
+                <select id="language" name="language">
+                    <option value="English">English</option>
+                    <option value="Hindi">Hindi</option>
+                    <option value="Spanish">Spanish</option>
+                </select><br><br>
+
+                <!-- 2D/3D Selection -->
+                <label for="format">Format:</label>
+                <select id="format" name="format">
+                    <option value="2D">2D</option>
+                    <option value="3D">3D</option>
+                </select><br><br>
+
+                <!-- Cinema Selection -->
+                <label for="cinema">Cinema:</label>
+                <select id="cinema" name="cinema">
+                    <option value="Cinema 1">Cinema 1</option>
+                    <option value="Cinema 2">Cinema 2</option>
+                </select><br><br>
+
+                <!-- Ticket Price -->
+                <label for="price">Ticket Price:</label>
+                <input type="text" id="price" name="price" readonly value="$10"><br><br>
+
+                <!-- Seat Number -->
+                <label for="seats">Number of Seats:</label>
+                <input type="number" id="seats" name="seats" min="1" max="10"><br><br>
+
+                <!-- Seat Type -->
+                <label for="seatType">Seat Type:</label>
+                <select id="seatType" name="seatType">
+                    <option value="Regular">Regular</option>
+                    <option value="VIP">VIP</option>
+                </select><br><br>
+
+                <!-- Reserved Seats -->
+                <label for="reservedSeats">Reserved Seats:</label>
+                <input type="text" id="reservedSeats" name="reservedSeats" placeholder="Enter seat numbers"><br><br>
+
+                <!-- Food & Beverages -->
+                <label for="food">Food & Beverages:</label>
+                <select id="food" name="food">
+                    <option value="Popcorn">Popcorn</option>
+                    <option value="Cold Drink">Cold Drink</option>
+                    <option value="Combo (Popcorn + Drink)">Combo (Popcorn + Drink)</option>
+                </select><br><br>
+
+                <!-- Promo Code -->
+                <label for="promoCode">Promo Code:</label>
+                <input type="text" id="promoCode" name="promoCode" placeholder="Enter promo code (if any)"><br><br>
+
+                <!-- Submit Button -->
+                <button type="submit">Confirm Booking</button>
+            </form>
+        </div>
+    </div>
+    </div>
+
                     </div>
                       <div class="flim">
                           <b>Arrow</b>

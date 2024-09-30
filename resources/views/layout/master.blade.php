@@ -227,6 +227,15 @@ background-color: #2c2f30;
    padding-top: 5px; 
   padding-left: 15px;
 }
+#log{
+  background-color: goldenrod;
+  width: 60px;
+
+}
+#log:hover{
+  background-color: black;
+}
+
 </style>
 
     <body>
@@ -269,9 +278,9 @@ background-color: #2c2f30;
                     <div class="dropdown-content" style="color: white;">
                     
                         
-                        <a href="/suspense">Suspence & Thriller</a>
+                        <a href="/suspence">Suspence & Thriller</a>
                         <a href="/action">Action</a>
-                        <a href="/fantasy">Sci-Fi & Fantacy</a>
+                        <a href="/fantacy">Sci-Fi & Fantacy</a>
                         <a href="/documentary">Documentary</a>
                         <a href="/horror">Horror</a>
                         <a href="/war">War & Politics</a>
@@ -286,7 +295,25 @@ background-color: #2c2f30;
             </li>
             <div class="sam">
               <li>
-                <button  type="button" class="btn btn-light" onclick="logout()" onMouseOver="this.style.color='goldenrod'" onMouseOut="this.style.color='white'">Logout</button>
+              @if (Route::has('login'))
+                <div class="">
+                    @auth
+                    <form method="POST" action="{{ route('logout') }}" x-data>
+                                @csrf
+
+                                <button>
+                                    {{ __('Log Out') }}
+                                </button>
+                            </form>
+                    @else
+                        <a href="{{ route('login') }}" class="nav-link back" id="log">Log in</a>
+
+                        @if (Route::has('register'))
+                            <!-- <a href="{{ route('register') }}" class="nav-link">Register</a> -->
+                        @endif
+                    @endauth
+                </div>
+            @endif
               </li>
             </div>
           </ul>
@@ -308,7 +335,7 @@ background-color: #2c2f30;
       <hr class="footer-hr">
       <div class="footer-content">
         <div class="footer-left">
-          <a href="home.html"><img class="footer-logo" src="/Images/Logo/cinema.jpg" alt="" width="30"
+          <a href="/home"><img class="footer-logo" src="/Images/Logo/cinema.jpg" alt="" width="30"
               height="24"></a>
           <p class="footer-bottom-tagline">Watch! Chill! Repeat!</p>
         </div>

@@ -191,27 +191,40 @@ function startTimer(time){
     }
 }
 
-// Get elements
-const buyTicketButton = document.getElementById("buyTicketButton");
-const movieModal = document.getElementById("movieModal");
-const closeButton = document.querySelector(".close");
 
-// Function to open the modal
-buyTicketButton.onclick = function() {
-    movieModal.style.display = "flex";
-}
 
-// Function to close the modal
-closeButton.onclick = function() {
-    movieModal.style.display = "none";
-}
 
-// Close the modal when clicking outside of it
-window.onclick = function(event) {
-    if (event.target === movieModal) {
-        movieModal.style.display = "none";
-    }
-}
+ // Get modal and elements
+ var modal = document.getElementById("bookingForm");
+ var btn = document.getElementById("bookTicketBtn");
+ var span = document.getElementsByClassName("close")[0];
+ 
+ // Show modal on button click
+ btn.onclick = function () {
+     modal.style.display = "block";
+ }
+ 
+ // Close modal when clicking on close button
+ span.onclick = function () {
+     modal.style.display="none";
+ }
+ 
+ // Close modal when clicking outside of it
+ window.onclick = function (event) {
+     if (event.target == modal) {
+         modal.style.display = "none";
+     }
+ }
+ 
+ // Form submission handling
+ document.getElementById('ticketForm').onsubmit = function (e) {
+     e.preventDefault();
+     // Additional logic for booking confirmation can be added here
+     alert("Your ticket has been booked successfully!");
+     modal.style.display = "none";
+ };
+ 
+ 
 
 
 

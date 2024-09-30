@@ -1,51 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Sign In</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
-      crossorigin="anonymous"
-    />
-
-    <!-- Font  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
-      rel="stylesheet"
-    />
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="shortcut icon"
-      href="./Images/Logo/Title.jpeg"
-      type="image/x-icon"
-    />
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"
-      integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    
-  <link rel="stylesheet" href="static/bootstrap.min.css">
-  <link rel="stylesheet" href="static/style-min.css">
-  <link rel="stylesheet" href="cards.css">
-  <link rel="stylesheet" href="static/premium.css">
-  <link rel="stylesheet" href="static/faq.css">
-  <link rel="stylesheet" href="footer.css">
-  <link rel="stylesheet" href="webstyle.css">
+<div class="body" min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100">
+    <div>
+        <!-- {{ $logo }} -->
+    </div>
 
     <script>
       var emailError = false;
@@ -182,7 +138,7 @@
         background-color: goldenrod;
         transform: scale(0.95);
       }
-      body {
+      .body {
         margin: 0;
         padding: 0;
         background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.85)),
@@ -323,6 +279,8 @@
       .or {
         margin-bottom: 5px;
         text-align: center;
+        justify-content: center;
+        display: flex;
         color: #bdc7c9;
       }
 
@@ -333,7 +291,8 @@
         text-align: right;
       }
       .help a:hover {
-        text-decoration: underline;
+        
+        color: goldenrod;
       }
 
       .protection {
@@ -468,20 +427,12 @@
         .abcRioButtonContents {
           font-size: 12px !important;
         }
-        .help a {
+        .help {
           margin-left: 60% !important;
         }
       }
     </style>
-    <meta
-      name="google-signin-client_id"
-      content="556331998780-jhmmulhgm2s2fgrqqln50vmtp1fh41vc.apps.googleusercontent.com"
-    />
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  </head>
-  <body>
     <div class="logo">
       <a href="/home">
         <img src="/Images/Logo/cinema.jpg" class="img-logo" alt="Logo" />
@@ -536,14 +487,15 @@
         </div>
         <div class="help">
           <a class="color_text" href="https://www.google.com/gmail/"
-            >Need help?</a
+            >Need Help?</a
           >
         </div>
         <div class="login-face">
           <br />
           <div class="new-members">
             NEW TO CINEMAVERSE
-            <a href="/signup" class="signup-link">Sign up now</a>.
+            <br>
+            <a href="/signup" class="signup-link">Regester Now</a>.
           </div>
           <br />
           <div class="protection color_link help">
@@ -622,6 +574,6 @@
         }
       });
     </script>
-   
-  </body>
-</html>
+
+    </div>
+</div>

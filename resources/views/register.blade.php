@@ -1,10 +1,71 @@
-@extends('layout.master')
-@section('title'.'signuppage')
+<!DOCTYPE html>
+<link rel="shortcut icon" href="./Images/Logo/Title.jpeg" type="image/x-icon" />
+<link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+  integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+  crossorigin="anonymous"
+/>
 
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link href="./static/style.css" rel="stylesheet" type="text/css" />
+<html>
+  <head>
+    <title>Sign Up</title>
 
-@section('contents')
-<style>
-h1 {
+    <!-- Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="static/bootstrap.min.css">
+  <link rel="stylesheet" href="static/style-min.css">
+  <link rel="stylesheet" href="cards.css">
+  <link rel="stylesheet" href="static/premium.css">
+  <link rel="stylesheet" href="static/faq.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="webstyle.css">
+ 
+
+    <!------------------------Scroll to top button------------------------------------------------>
+    <style>
+     \ #scrollToTopButton {
+        position: fixed;
+        bottom: 40px;
+        right: 25px;
+        font-size: 25px;
+        z-index: 99;
+        width: 50px;
+        height: 50px;
+        background-color: red;
+        color: black;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        padding: 6px;
+        border-radius: 50%;
+        box-shadow: 0 6px 10px 0px gray;
+      }
+
+      #scrollToTopButton:hover,
+      i:hover {
+        background-color: white;
+        color: red;
+      }
+
+      h1 {
         margin: auto;
         width: max-content;
         color: white;
@@ -43,13 +104,13 @@ h1 {
       }
       input[type="submit"] {
         width: 260px;
-        background-color: goldenrod;
+        background-color: red;
         font-weight: bold;
       }
       input[type="submit"]:hover {
         cursor: pointer;
         border: 2px gray solid;
-        background-color: goldenrod;
+        background-color: red;
         transform: scale(0.95);
       }
       body {
@@ -65,7 +126,7 @@ h1 {
       }
       .brand {
         margin-bottom: 13px;
-        color: goldenrod;
+        color: red;
         padding-top: 15px;
       }
       #errormessage {
@@ -104,7 +165,7 @@ h1 {
 
       .bottom {
         background-color: rgba(0, 0, 0, 0.35);
-        color: goldenrod;
+        color: #bdc7c9;
       }
 
       .bottom-width {
@@ -148,11 +209,11 @@ h1 {
       }
 
       .color_text {
-        color: goldenrod;
+        color: #bdc7c9;
       }
 
       .color_link {
-        color: goldenrod;
+        color: #bdc7c9;
       }
 
       .signup-link {
@@ -165,7 +226,7 @@ h1 {
       }
 
       .face_icon {
-        color: goldenrod;
+        color: #3b5998;
         margin-right: 6px;
         font-size: 20px;
       }
@@ -179,12 +240,12 @@ h1 {
       .login-face {
         margin: 50px 0 15px 0;
         vertical-align: middle;
-        color: goldenrod;
+        color: #bdc7c9;
       }
 
       .al_members {
         margin: 12px 0px;
-        color: goldenrod;
+        color: #a0a2a2;
         padding: 0px 12px;
         font-size: 16.2px;
       }
@@ -207,7 +268,7 @@ h1 {
       }
       .protection {
         font-size: 0.8rem;
-        color: goldenrod;
+        color: #bdc7c9;
         text-align: center;
       }
 
@@ -221,7 +282,7 @@ h1 {
 
       .tel-link {
         text-decoration: none;
-        color: goldenrod;
+        color: #e1e5ea;
       }
 
       .tel-link:hover {
@@ -277,7 +338,7 @@ h1 {
         margin-top: 20px;
         padding: 13px;
         border-radius: 5px;
-        background-color: goldenrod;
+        background-color: red;
         color: white;
         border: none;
         font-weight: bold;
@@ -331,8 +392,7 @@ h1 {
         }
       }
     </style>
- 
- <link
+    <link
       rel="shortcut icon"
       href="./Images/Logo/Title.jpeg"
       type="image/x-icon"
@@ -340,8 +400,8 @@ h1 {
   </head>
   <body>
     <div class="logo">
-      <a href="/home">
-        <img src="/Images/Logo/cinema.jpg" class="img-logo" />
+      <a href="home.html">
+        <img src="Images/TheaterLogoFinal.png" class="img-logo" />
       </a>
     </div>
     <div class="login-div">
@@ -511,4 +571,167 @@ h1 {
         }
       });
     </script>
-@endsection
+  </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"
+    integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script>
+    var namerror = false;
+    var emailerror = false;
+    var passworderror = false;
+    var confirmerror = false;
+    var code = Math.floor(1000 + Math.random() * 9000);
+    var strongPass = new RegExp(
+      "^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{6,})"
+    );
+    var btnclicked = false;
+    const mailformat =
+      /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+    function DisplayResults(e) {
+      var name = document.forms["regform"]["name"].value;
+      var email = document.forms["regform"]["email"].value;
+      var password = document.forms["regform"]["password"].value;
+      var confirmpassword = document.forms["regform"]["retypepassword"].value;
+      var error = document.getElementById("errormessage");
+
+      if (name.length == 0) {
+        namerror = true;
+        error.style.display = "block";
+        error.innerHTML = `<p><svg class="svg-icon" viewBox="0 0 20 20">
+            <path d="M12.075,10.812c1.358-0.853,2.242-2.507,2.242-4.037c0-2.181-1.795-4.618-4.198-4.618S5.921,4.594,5.921,6.775c0,1.53,0.884,3.185,2.242,4.037c-3.222,0.865-5.6,3.807-5.6,7.298c0,0.23,0.189,0.42,0.42,0.42h14.273c0.23,0,0.42-0.189,0.42-0.42C17.676,14.619,15.297,11.677,12.075,10.812 M6.761,6.775c0-2.162,1.773-3.778,3.358-3.778s3.359,1.616,3.359,3.778c0,2.162-1.774,3.778-3.359,3.778S6.761,8.937,6.761,6.775 M3.415,17.69c0.218-3.51,3.142-6.297,6.704-6.297c3.562,0,6.486,2.787,6.705,6.297H3.415z"></path>
+          </svg><span class="error">Name should not be empty</span></p>`;
+      } else if (email.length == 0) {
+        emailerror = true;
+        error.style.display = "block";
+        error.innerHTML = `<p><svg class="svg-icon" viewBox="0 0 20 20">
+            <path d="M17.388,4.751H2.613c-0.213,0-0.389,0.175-0.389,0.389v9.72c0,0.216,0.175,0.389,0.389,0.389h14.775c0.214,0,0.389-0.173,0.389-0.389v-9.72C17.776,4.926,17.602,4.751,17.388,4.751 M16.448,5.53L10,11.984L3.552,5.53H16.448zM3.002,6.081l3.921,3.925l-3.921,3.925V6.081z M3.56,14.471l3.914-3.916l2.253,2.253c0.153,0.153,0.395,0.153,0.548,0l2.253-2.253l3.913,3.916H3.56z M16.999,13.931l-3.921-3.925l3.921-3.925V13.931z"></path>
+          </svg><span class="error">Email should not be empty</span></p>`;
+      } else if (!mailformat.test(email)) {
+        error.style.display = "block";
+        error.innerHTML = `<p><svg class="svg-icon" viewBox="0 0 20 20">
+            <path d="M17.388,4.751H2.613c-0.213,0-0.389,0.175-0.389,0.389v9.72c0,0.216,0.175,0.389,0.389,0.389h14.775c0.214,0,0.389-0.173,0.389-0.389v-9.72C17.776,4.926,17.602,4.751,17.388,4.751 M16.448,5.53L10,11.984L3.552,5.53H16.448zM3.002,6.081l3.921,3.925l-3.921,3.925V6.081z M3.56,14.471l3.914-3.916l2.253,2.253c0.153,0.153,0.395,0.153,0.548,0l2.253-2.253l3.913,3.916H3.56z M16.999,13.931l-3.921-3.925l3.921-3.925V13.931z"></path>
+          </svg><span class="error">Email address is invalid</span></p>`;
+      } else if (!strongPass.test(password)) {
+        passworderror = true;
+        error.style.display = "block";
+        error.innerHTML = `<p><svg class="svg-icon" viewBox="0 0 20 20">
+            <path d="M17.308,7.564h-1.993c0-2.929-2.385-5.314-5.314-5.314S4.686,4.635,4.686,7.564H2.693c-0.244,0-0.443,0.2-0.443,0.443v9.3c0,0.243,0.199,0.442,0.443,0.442h14.615c0.243,0,0.442-0.199,0.442-0.442v-9.3C17.75,7.764,17.551,7.564,17.308,7.564 M10,3.136c2.442,0,4.43,1.986,4.43,4.428H5.571C5.571,5.122,7.558,3.136,10,3.136 M16.865,16.864H3.136V8.45h13.729V16.864z M10,10.664c-0.854,0-1.55,0.696-1.55,1.551c0,0.699,0.467,1.292,1.107,1.485v0.95c0,0.243,0.2,0.442,0.443,0.442s0.443-0.199,0.443-0.442V13.7c0.64-0.193,1.106-0.786,1.106-1.485C11.55,11.36,10.854,10.664,10,10.664 M10,12.878c-0.366,0-0.664-0.298-0.664-0.663c0-0.366,0.298-0.665,0.664-0.665c0.365,0,0.664,0.299,0.664,0.665C10.664,12.58,10.365,12.878,10,12.878"></path>
+          </svg><span class="error">Password should be atleast 6 characters long,contain a special character,a lower case and upper case alphabet and a number.</span></p>`;
+      } else if (password != confirmpassword) {
+        confirmerror = true;
+        error.style.display = "block";
+        error.innerHTML = `<p><svg class="svg-icon" viewBox="0 0 20 20">
+            <path d="M17.308,7.564h-1.993c0-2.929-2.385-5.314-5.314-5.314S4.686,4.635,4.686,7.564H2.693c-0.244,0-0.443,0.2-0.443,0.443v9.3c0,0.243,0.199,0.442,0.443,0.442h14.615c0.243,0,0.442-0.199,0.442-0.442v-9.3C17.75,7.764,17.551,7.564,17.308,7.564 M10,3.136c2.442,0,4.43,1.986,4.43,4.428H5.571C5.571,5.122,7.558,3.136,10,3.136 M16.865,16.864H3.136V8.45h13.729V16.864z M10,10.664c-0.854,0-1.55,0.696-1.55,1.551c0,0.699,0.467,1.292,1.107,1.485v0.95c0,0.243,0.2,0.442,0.443,0.442s0.443-0.199,0.443-0.442V13.7c0.64-0.193,1.106-0.786,1.106-1.485C11.55,11.36,10.854,10.664,10,10.664 M10,12.878c-0.366,0-0.664-0.298-0.664-0.663c0-0.366,0.298-0.665,0.664-0.665c0.365,0,0.664,0.299,0.664,0.665C10.664,12.58,10.365,12.878,10,12.878"></path>
+          </svg><span class="error">Passwords doesn't match</span></p>`;
+      } else {
+        Email.send({
+          Host: "smtp.gmail.com",
+          Username: "apnatheatre1@gmail.com",
+          Password: "apnatheatre123!@#",
+          To: email,
+          From: "apnatheatre1@gmail.com",
+          Subject: "Email verification",
+          Body: `Hello ${name},<br> Please enter this code: ${code} in the form to verify your email`,
+        }).then((message) => console.log(message));
+        swal("Please enter the code sent to your email");
+        var x = document.getElementsByClassName("aftersubmit");
+        x[0].style.opacity = "1";
+        console.log(x[0]);
+      }
+      return false;
+    }
+
+    function FinalResults() {
+      var usercode = document.forms["verificationform"]["code"].value;
+      console.log("hii");
+      if (code == usercode) {
+        swal({
+          title: "Registration Successful!",
+          text: "Happy to have you aboard",
+          type: "success",
+        });
+
+        window.location.href = "quiz.html";
+        // console.log(window.location.href)
+        // console.log('hi')
+        // var url = window.location.href
+        // var url1 = url.split("signup")
+        // console.log(url1)
+        // var newurl = url1[0] + "quiz.html"
+        // console.log(newurl)
+        // history.pushState(null,null, newurl);
+        // window.location.reload();
+        // onsubmit="return DisplayResults()"
+      } else {
+        swal({
+          title: "Invalid code",
+          type: "warning",
+          buttons: true,
+          dangerMode: true,
+        });
+      }
+      return false;
+    }
+
+    function change(e) {
+      var name = document.forms["regform"]["name"].value;
+      var error = document.getElementById("errormessage");
+      var email = document.forms["regform"]["email"].value;
+      var password = document.forms["regform"]["password"].value;
+      var confirmpassword = document.forms["regform"]["retypepassword"].value;
+      if (namerror == true) {
+        if (name.length > 0) {
+          namerror = false;
+          error.style.display = "none";
+        }
+      } else if (emailerror == true) {
+        if (email.length > 0) {
+          emailerror = false;
+          error.style.display = "none";
+        }
+      } else if (passworderror == true) {
+        if (password.length > 0) {
+          passworderror = true;
+          error.style.display = "none";
+        }
+      } else if (confirmerror == true) {
+        if (confirmpassword == password) {
+          confirmerror = false;
+          error.style.display = "none";
+        }
+      }
+    }
+  </script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+
+        <script src="script.js"></script>
+        <script src="scriptt.js"></script>
+        
+     <script src="main-min.js"></script>
+     <script src="question.js"></script>
+    <script src="./static/script.js"></script>
+
+
+
+    <!-- offcanva JS and footer js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://daniellaharel.com/raindrops/js/raindrops.js"></script>
+
+</html>
